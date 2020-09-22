@@ -1,0 +1,39 @@
+.posts-wrapper {
+  width: 1260px;
+}
+
+.post-heading-name {
+  font-family: 'FiraSansRegular';
+  color: #333333;
+  font-size: 20px;
+}
+
+.post-date {
+
+  font-family: 'FiraSansRegular';
+  color: gray;
+  font-size: 15px;
+}
+
+.post-text {
+  margin-top: 10px;
+  font-family: 'FiraSansRegular';
+  color: #333333;
+  font-size: 18px;
+}
+
+.post-image {
+  margin-top: 10px;
+}
+
+.post-container {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  border-top: 1px solid lightgray;
+}
+
+.heading-date-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}

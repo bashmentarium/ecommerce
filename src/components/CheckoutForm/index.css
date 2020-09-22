@@ -1,0 +1,170 @@
+.checkout-form-wrapper {
+  padding: 20px 0;
+  margin: 0 auto;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  align-items: center;
+  box-shadow: 0px 2px 3px -2px rgba(150,150,150,0.91);
+  background-color: #ffffff
+}
+
+.checkout-input-wrapper {
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+
+.checkout-form-label-name {
+  font-family: 'FiraSansRegular';
+  color: #333333;
+  font-size: 18px;
+}
+
+.checkout-form-error-label-name {
+  font-family: 'FiraSansRegular';
+  color: red;
+  font-size: 18px;
+}
+
+.checkout-form-label-phone {
+  font-family: 'FiraSansRegular';
+  color: #333333;
+  font-size: 18px;
+}
+
+.checkout-form-error-label-phone {
+  font-family: 'FiraSansRegular';
+  color: red;
+  font-size: 18px;
+}
+
+.checkout-form-input-name {
+  font-family: 'FiraSansRegular';
+  color: #333333;
+  font-size: 18px;
+  border-radius: 2px;
+  border: 1px solid lightgray;
+  outline: none;
+}
+
+.checkout-form-error-input-name {
+  font-family: 'FiraSansRegular';
+  color: #333333;
+  font-size: 18px;
+  border-radius: 2px;
+  border: 1px solid red;
+  outline: none;
+}
+
+.checkout-form-input-phone {
+  font-family: 'FiraSansRegular';
+  color: #333333;
+  font-size: 18px;
+  border-radius: 2px;
+  border: 1px solid lightgray;
+  outline: none;
+}
+
+.checkout-form-error-input-phone {
+  font-family: 'FiraSansRegular';
+  color: #333333;
+  font-size: 18px;
+  border-radius: 2px;
+  border: 1px solid red;
+  outline: none;
+}
+
+.checkout-form-name-error-message {
+  font-family: 'FiraSansRegular';
+  color: #ffffff;
+  font-size: 15px;
+  height: 20px;
+  padding: 0;
+  display: flex;
+  align-content: center;
+  margin-top: -3px;
+}
+
+.checkout-form-name-error-message-active {
+  font-family: 'FiraSansRegular';
+  color: red;
+  font-size: 15px;
+  height: 20px;
+  padding: 0;
+  display: flex;
+  align-content: center;
+  margin-top: -3px;
+}
+
+.checkout-form-phone-error-message {
+  font-family: 'FiraSansRegular';
+  color: #ffffff;
+  font-size: 15px;
+  height: 20px;
+  padding: 0;
+  display: flex;
+  align-content: center;
+  margin-top: -3px;
+}
+
+.checkout-form-phone-error-message-active {
+  font-family: 'FiraSansRegular';
+  color: red;
+  font-size: 15px;
+  height: 20px;
+  padding: 0;
+  display: flex;
+  align-content: center;
+  margin-top: -3px;
+}
+
+.checkout-form-button {
+  width: 200px;
+  border-radius: 3px;
+  height: 35px;
+  border: none;
+  margin: 10px auto 0;
+  font-family: 'FiraSansRegular';
+  color: #333333;
+  font-size: 18px;
+  background-color:#f4f4f4;
+  box-shadow: 0px 2px 4px -2px rgba(150,150,150,0.91);
+}
+
+.checkout-form-button:active {
+  background: #F4F4F4;
+  -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+      -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+          box-shadow: inset 0px 0px 5px #c1c1c1;
+    outline: none;
+}
+
+.checkout-form-dropdown {
+  height: 40px;
+  border: 1px solid lightgray;
+  border-radius: 3;
+  outline: none;
+  font-family: 'FiraSansRegular';
+  color: #333333;
+  font-size: 18px;
+}
+
+.privacy-wrapper {
+  font-family: 'FiraSansLight';
+  color: #333333;
+  font-size: 16px;
+  width: 75%;
+  text-align: center;
+  margin: 15px auto 15px;
+}
+
+.privacy-link {
+  color: #333333;
+}
+
+.privacy-link:visited {
+  color: #333333;
+}

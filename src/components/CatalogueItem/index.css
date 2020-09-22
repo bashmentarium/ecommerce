@@ -1,0 +1,92 @@
+.list-item-wrapper {
+  width: 320px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  padding-left: 10px;
+  position: relative;
+
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  cursor: default;
+}
+
+.list-item-circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+  background-color:#f4f4f4;
+  margin: auto 0;
+}
+
+.list-item-text {
+  font-family: 'FiraSansRegular';
+  color:#333333;
+  font-size: 20px;
+  margin: auto 0 auto 15px;
+  width: 250px;
+}
+
+.list-item-wrapper-active {
+  background-color: #DCDCDC;
+  width: 320px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  padding-left: 10px;
+  position: relative;
+  cursor: default;
+}
+
+.catalogue-item-subc {
+  position: absolute;
+  left: 300px;
+  top: 0;
+  display: flex;
+  align-content: flex-start;
+  flex-direction: column;
+  margin-left: 15px;
+  border-radius: 4px;
+  flex-wrap: wrap;
+  z-index: 15;
+  background-color:#DCDCDC;
+  min-height: 600px;
+  
+}
+
+.catalogue-heading {
+  width: 300px;
+  font-family: 'FiraSansRegular';
+  color:black;
+  font-size: 20px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  padding-left: 15px;
+  background-color:#f4f4f4;
+  position: absolute;
+  left: 300px;
+  top: 0;
+}
+
+.list-item-sub {
+  font-family: 'FiraSansRegular';
+  color:#333333;
+  font-size: 20px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 300px;
+  padding-left: 15px;
+}
+
+.list-item-sub:hover {
+  color:white;
+
+}
+
+.list-item-sub-text {
+  
+}

@@ -1,0 +1,28 @@
+.catalogue-list {
+  position: relative;
+  background: "#f4f4f4";
+  height: 620px;
+  margin-top: 15px
+}
+
+.catalogue-list-wide {
+  position: relative;
+  background: "#f4f4f4";
+  height: 620px;
+  margin-top: 15px
+}
+
+.subcategories-from-catalogue {
+
+}
+
+.filter-options-container {
+
+}
+
+.divider {
+  height: 1px;
+  width: 315px;
+  background-color: black;
+  
+}

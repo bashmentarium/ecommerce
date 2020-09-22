@@ -1,0 +1,88 @@
+.footer {
+  height: 240px;
+  background-color: #dadada;
+  padding-top: 30px;
+  border-top: 1px solid black;
+}
+
+.footer-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.copyright {
+  font-family: 'FiraSansRegular';
+  color: #A7A4A4;
+  font-size: 16px;
+  justify-self: flex-end;
+  padding-right: 20px;
+  text-align: right;
+}
+
+.contact {
+  font-family: 'FiraSansRegular';
+  color: #A7A4A4;
+  width: 250px;
+  justify-self: flex-start;
+  font-size: 16px;
+}
+
+.phone {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social {
+  display: flex;
+  height: 40px;
+  justify-content: center;
+}
+
+.payment {
+  display: flex;
+  height: 40px;
+  justify-content: center;
+}
+
+.phone-link {
+  text-decoration: none;
+  color: gray;
+}
+
+.phone-link:focus {
+  outline: none
+}
+
+.footer-links-wrapper {
+  display: flex;
+  flex-direction: column;
+  
+  margin-left: 50px;
+}
+
+.footer-link-text {
+  font-family: 'FiraSansRegular';
+  color: gray;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+
+.footer-link-heading {
+  font-family: 'FiraSansRegular';
+  color: #333333;
+  font-size: 16px;
+
+}
+
+.social-link-icon {
+
+  margin-right: 10px;
+
+}
+
+.social-link-icon:focus {
+  outline:none
+}

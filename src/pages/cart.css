@@ -1,0 +1,86 @@
+.cart-heading,
+.cart-list-heading,
+.cart-item-wrapper {
+  font-family: 'FiraSansRegular';
+  color: #333333;
+
+}
+
+.cart-item-container {
+  min-height: 500px;
+  margin-bottom: 100px;
+}
+
+.cart-item-wrapper {
+  display: inline-grid;
+  width: 100%;
+  grid-template-columns: 10fr 1fr 2fr;
+  box-shadow: 0px 2px 2px -2px rgba(150,150,150,0.91);
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px 0 10px 10px;
+  align-items: center;
+  margin-bottom: 10px;
+  font-family: 'FiraSansRegular';
+  color: #333333;
+  position: relative;
+}
+
+.cart-item-name {
+  margin-left: 15px
+}
+
+.cart-item-price {
+  text-align: left;
+}
+
+.cart-item-quantity {
+  display: flex;
+  justify-content: center;
+}
+
+.cart-item-add-button {
+  width: 25px;
+  height: 25px;
+  background-color: lightgrey;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.cart-item-value {
+  margin: 0 10px;
+  width: 25px;
+  text-align: center
+}
+
+.cart-empty-heading {
+  font-family: 'FiraSansRegular';
+  color: #333333;
+}
+
+.cart-total-text {
+  font-family: 'FiraSansRegular';
+
+  color: #333333;
+  font-size: 28px;
+}
+
+.order-container {
+  height: 600px;
+  font-family: 'FiraSansRegular';
+  color: #333333;
+  font-size: 25px;
+}
+
+.remove-from-cart-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+
+  width: 25px;
+  height: 25px;
+
+}

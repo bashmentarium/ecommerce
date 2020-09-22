@@ -1,0 +1,139 @@
+.products-page-wrapper {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
+.products-page-wrapper-high {
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+ 
+.products-page-filter {
+  width: 350px;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+
+}
+ 
+.products-container {
+  display: grid;
+  min-height: 310px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 80px 40px;
+
+  margin-bottom: 100px;
+}
+
+.products-catalogue-button {
+  width: 280px;
+  height: 50px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 5px -2px rgba(150,150,150,0.91);
+  background-color: #ffffff;
+  font-family: 'FiraSansRegular';
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+}
+
+.products-catalogue-button:active {
+  background-color: #F99E2C
+}
+
+.no-products-heading {
+  font-size: 26px;
+  font-family: 'FiraSansRegular';
+  margin-top: 20px;
+
+}
+
+.sub-heading-name-wrapper {
+  margin-left: 50px;
+  width: 500px;
+
+}
+
+.sub-catalogue-button {
+  width: 300px;
+  height: 60px;
+  box-shadow: 0px 2px 5px -2px rgba(150,150,150,0.91);
+  border-radius: 4px;
+  display: flex;
+  background-color: white;
+  cursor: pointer;
+  border: none;
+
+}
+
+.sub-catalogue-button:active {
+  background: #F4F4F4;
+  -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+      -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+          box-shadow: inset 0px 0px 5px #c1c1c1;
+    outline: none;
+}
+
+.filter-items-container {
+  display: flex;
+  flex-direction: column;
+  font-family: 'FiraSansLight';
+
+  max-height: 210px;
+  flex-wrap: wrap;
+}
+
+.products-page-filter-wrapper {
+  
+}
+
+.filter-property-name {
+  font-family: 'FiraSansMedium';
+  font-size: 18px;
+}
+
+.filter-item-wrapper {
+  display: flex;
+ 
+}
+
+.filter-item-text {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.slider-wrapper {
+  width: 300px;
+}
+
+.slider-value {
+  font-family: 'FiraSansLight';
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-value-item1 {
+  width: 100px;
+  text-align: left;
+}
+
+.slider-value-item2 {
+  width: 100px;
+  text-align: right;
+}
+
+.filter-items-link {
+  text-decoration: none;
+  display: flex;
+  color: #333333
+}
+
+.filter-items-link:focus {
+  outline: none;
+}

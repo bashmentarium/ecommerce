@@ -1,0 +1,7 @@
+.linked-products-wrapper {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 80px 30px;
+  margin-bottom: 100px;
+}

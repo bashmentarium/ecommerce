@@ -1,0 +1,58 @@
+.products-grid {
+  display: grid;
+  margin: 20px auto 100px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 80px 25px;
+  width: 1280px;
+}
+
+.oferte-de-top {
+  font-family: 'FiraSansRegular';
+  color: #393939;
+  font-size: 28px;
+}
+.top-wrapper-high {
+
+  margin-top: 150px;
+}
+
+.cart-list-heading {
+  display: grid;
+  grid-template-columns: 10fr 1fr 2fr;
+  margin-bottom: 10px;
+}
+
+@font-face {
+  font-family: 'FiraSansLight';
+  src: local('FiraSansLight'), url('../fonts/FiraSansExtraCondensed-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'FiraSansMedium';
+  src: local('FiraSansMedium'), url('../fonts/FiraSansExtraCondensed-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'FiraSansRegular';
+  src: local('FiraSansRegular'), url('../fonts/FiraSansExtraCondensed-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'FiraSansSemiBold';
+  src: local('FiraSansSemiBold'), url('../fonts/FiraSansExtraCondensed-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'FiraSansBold';
+  src: local('FiraSansBold'), url('../fonts/FiraSansExtraCondensed-Bold.ttf') format('truetype');
+}
+
+
+
+.distribution-page-paragraph {
+  font-family: 'FiraSansRegular';
+  color: #333333;
+  font-size: 16px;
+
+  width: 1250px;
+}
