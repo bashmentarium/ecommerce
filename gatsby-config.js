@@ -6,12 +6,11 @@ const {
 } = process.env
 const isNetlifyProduction = NETLIFY_ENV === "production"
 const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL
-import { apiURL, siteUrl } from "./src/api"
 
 module.exports = {
   siteMetadata: {
     title: `Ingco`,
-    siteUrl: siteUrl,
+    siteUrl: `https://www.ingco.md`,
     description: `Buy power tools at ingco!`,
     author: `ingco`,
   },
@@ -19,7 +18,7 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: apiURL,
+        apiURL: "https://ingco-backend.herokuapp.com",
         queryLimit: 10000, // Default to 100
         contentTypes: [
           "product",

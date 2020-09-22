@@ -2,3 +2,5 @@ node_modules
 api
 public
 .cache
+gatsby-config.js
+.DS_Store
