@@ -4,3 +4,5 @@ public
 .cache
 gatsby-config.js
 .DS_Store
+.prettierrc
+.prettierignore
