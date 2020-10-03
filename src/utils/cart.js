@@ -1,6 +1,6 @@
 /**
  * @method saveCart
- * @description Saves the content of the cart to Local Storage,
+ * @description Saves the content of the cart to Local Storage
  * given the passed cart object.
  * @param {any[]} cart
  */
