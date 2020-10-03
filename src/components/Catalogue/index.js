@@ -1,22 +1,17 @@
-import React, { useState } from "react"
+import React, {useState} from 'react'
 
-import { StaticQuery, graphql } from "gatsby"
+import {StaticQuery, graphql} from 'gatsby'
 
-import CatalogueItem from "../CatalogueItem"
+import CatalogueItem from '../CatalogueItem'
 
-import "./index.css"
+import './index.css'
 
-const Catalogue = ({ visible, setVisible }) => {
+const Catalogue = ({visible, setVisible}) => {
   const pageQuery = graphql`
     query CategoryQuery {
       allStrapiCategory(
         sort: {
-          fields: [
-            created_at
-            created_at
-            subcategories___created_at
-            subsubcategories___created_at
-          ]
+          fields: [created_at, created_at, subcategories___created_at]
           order: ASC
         }
       ) {
@@ -27,18 +22,10 @@ const Catalogue = ({ visible, setVisible }) => {
           type
           subcategories {
             category
-            name_ro
+            name
             name_ru
             subcategory_id
             id
-          }
-          subsubcategories {
-            category
-            subcategory
-            name_ro
-            name_ru
-            id
-            subsubcategory_id
           }
         }
       }
@@ -47,21 +34,21 @@ const Catalogue = ({ visible, setVisible }) => {
 
   const [showList, setShowList] = useState(false)
 
-  const handleMouse = arg => {
+  const handleMouse = (arg) => {
     setVisible(arg)
     setShowList(!arg)
   }
 
   return (
     <div
-      className={visible ? "catalogue-list" : "catalogue-list-wide"}
+      className={visible ? 'catalogue-list' : 'catalogue-list-wide'}
       onMouseEnter={() => handleMouse(false)}
       onMouseLeave={() => handleMouse(true)}
     >
       <StaticQuery
         query={pageQuery}
-        render={data => {
-          const { nodes } = data.allStrapiCategory
+        render={(data) => {
+          const {nodes} = data.allStrapiCategory
 
           const newNodes = nodes.map(
             ({
@@ -86,7 +73,7 @@ const Catalogue = ({ visible, setVisible }) => {
           )
 
           return (
-            <div className="filter-options-container">
+            <div className='filter-options-container'>
               {newNodes.map((item, index, array) => {
                 return (
                   <>
@@ -96,7 +83,7 @@ const Catalogue = ({ visible, setVisible }) => {
                       setVisible={setVisible}
                     />
                     {index !== array.length - 1 && (
-                      <div className="divider" style={{ marginLeft: 5 }} />
+                      <div className='divider' style={{marginLeft: 5}} />
                     )}
                   </>
                 )

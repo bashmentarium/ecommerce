@@ -5,13 +5,13 @@
  */
 
 // You can delete this file if you're not using it
-const path = require("path")
-require("url-search-params-polyfill")
+const path = require('path')
+require('url-search-params-polyfill')
 
 const makeRequest = (graphql, request) =>
   new Promise((resolve, reject) => {
     resolve(
-      graphql(request).then(result => {
+      graphql(request).then((result) => {
         if (result.errors) {
           reject(result.errors)
         }
@@ -21,8 +21,8 @@ const makeRequest = (graphql, request) =>
     )
   })
 
-exports.createPages = ({ actions, graphql }) => {
-  const { createPage } = actions
+exports.createPages = ({actions, graphql}) => {
+  const {createPage} = actions
 
   const generateProductPages = makeRequest(
     graphql,
@@ -39,8 +39,8 @@ exports.createPages = ({ actions, graphql }) => {
         }
       }
     `
-  ).then(result => {
-    result.data.allStrapiProduct.edges.forEach(({ node }) => {
+  ).then((result) => {
+    result.data.allStrapiProduct.edges.forEach(({node}) => {
       createPage({
         path: `/products/${node.product_id}`,
         component: path.resolve(`src/templates/product/index.js`),
@@ -55,21 +55,21 @@ exports.createPages = ({ actions, graphql }) => {
     graphql,
     `
     {
-      allStrapiSubsubcategory{
+      allStrapiSubcategory{
         edges {
           node {
             strapiId
-            subsubcategory_id
+            subcategory_id
           }
         }
       }
     }
     `
-  ).then(result => {
-    result.data.allStrapiSubsubcategory.edges.forEach(({ node }) => {
+  ).then((result) => {
+    result.data.allStrapiSubcategory.edges.forEach(({node}) => {
       createPage({
-        path: `/products/${node.subsubcategory_id}`,
-        component: path.resolve(`src/templates/subsubcategory/index.js`),
+        path: `/products/${node.subcategory_id}`,
+        component: path.resolve(`src/templates/subcategory/index.js`),
         context: {
           id: node.strapiId,
         },

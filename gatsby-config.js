@@ -1,10 +1,10 @@
 const {
   NODE_ENV,
-  URL: NETLIFY_SITE_URL = "https://www.ingco.md",
+  URL: NETLIFY_SITE_URL = 'https://www.ingco.md',
   DEPLOY_PRIME_URL: NETLIFY_DEPLOY_URL = NETLIFY_SITE_URL,
   CONTEXT: NETLIFY_ENV = NODE_ENV,
 } = process.env
-const isNetlifyProduction = NETLIFY_ENV === "production"
+const isNetlifyProduction = NETLIFY_ENV === 'production'
 const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL
 
 module.exports = {
@@ -18,17 +18,9 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: "https://ingco-backend.herokuapp.com",
+        apiURL: 'https://ecommerce-126357849.herokuapp.com',
         queryLimit: 10000, // Default to 100
-        contentTypes: [
-          "product",
-          "category",
-          "baner",
-          "order",
-          "subsubcategory",
-          "post",
-          "promotional",
-        ],
+        contentTypes: ['product', 'category', 'baner', 'order', 'subcategory'],
         singleTypes: [],
       },
     },
@@ -64,20 +56,20 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-robots-txt",
+      resolve: 'gatsby-plugin-robots-txt',
       options: {
         resolveEnv: () => NETLIFY_ENV,
         env: {
           production: {
-            policy: [{ userAgent: "*" }],
+            policy: [{userAgent: '*'}],
           },
-          "branch-deploy": {
-            policy: [{ userAgent: "*", disallow: ["/"] }],
+          'branch-deploy': {
+            policy: [{userAgent: '*', disallow: ['/']}],
             sitemap: null,
             host: null,
           },
-          "deploy-preview": {
-            policy: [{ userAgent: "*", disallow: ["/"] }],
+          'deploy-preview': {
+            policy: [{userAgent: '*', disallow: ['/']}],
             sitemap: null,
             host: null,
           },
@@ -85,9 +77,9 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-sitemap",
+      resolve: 'gatsby-plugin-sitemap',
       options: {
-        exclude: ["/cart", "/404", "/favorites", "/privacy", "/terms"],
+        exclude: ['/cart', '/404', '/favorites', '/privacy', '/terms'],
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

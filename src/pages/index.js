@@ -1,19 +1,19 @@
-import React, { useState } from "react"
+import React, {useState} from 'react'
 
-import { graphql } from "gatsby"
-import { FormattedMessage } from "gatsby-plugin-react-intl"
+import {graphql} from 'gatsby'
+import {FormattedMessage} from 'gatsby-plugin-react-intl'
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Catalogue from "../components/Catalogue"
-import ProductCard from "../components/ProductCard"
-import Baner from "../components/Baner"
+import Layout from '../components/layout'
+import SEO from '../components/seo'
+import Catalogue from '../components/Catalogue'
+import ProductCard from '../components/ProductCard'
+import Baner from '../components/Baner'
 
-import "../fonts/FiraSansExtraCondensed-Light.ttf"
+import '../fonts/FiraSansExtraCondensed-Light.ttf'
 
-import "./index.css"
+import './index.css'
 
-const IndexPage = ({ data }) => {
+const IndexPage = ({data}) => {
   const [visible, setVisible] = useState(true)
   const [showCatalogue, setShowCatalogue] = useState(false)
 
@@ -23,18 +23,18 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Home" />
-      <div className="catalogue-button" onClick={handleClick}>
-        <span className="catalogue-button-text">
-          <FormattedMessage id="catalogName" />
+      <SEO title='Home' />
+      <div className='catalogue-button' onClick={handleClick}>
+        <span className='catalogue-button-text'>
+          <FormattedMessage id='catalogName' />
         </span>
       </div>
       {showCatalogue && (
         <div
           style={{
-            position: "absolute",
+            position: 'absolute',
             zIndex: 20,
-            backgroundColor: "#f4f4f4",
+            backgroundColor: '#f4f4f4',
           }}
         >
           <Catalogue setVisible={setVisible} visible={visible} />
@@ -42,21 +42,21 @@ const IndexPage = ({ data }) => {
       )}
       <div
         style={{
-          display: "flex",
+          display: 'flex',
           marginBottom: 70,
-          width: "50%",
-          position: "relative",
+          width: '50%',
+          position: 'relative',
         }}
-        className="index-page-container"
+        className='index-page-container'
       >
         <Baner />
       </div>
-      <div className={"top-wrapper"}>
-        <span className={"oferte-de-top"}>
-          <FormattedMessage id="oferteTop" />
+      <div className={'top-wrapper'}>
+        <span className={'oferte-de-top'}>
+          <FormattedMessage id='oferteTop' />
         </span>
-        <div className="products-grid">
-          {data.allStrapiProduct.nodes.map(product => {
+        <div className='products-grid'>
+          {data.allStrapiProduct.nodes.map((product) => {
             return <ProductCard product={product} key={product.strapiId} />
           })}
         </div>
@@ -69,7 +69,7 @@ export default IndexPage
 
 export const pageQuery = graphql`
   query MyQuery {
-    allStrapiProduct(filter: { promo_pagina_principala: { eq: true } }) {
+    allStrapiProduct(filter: {promo: {eq: true}}) {
       nodes {
         strapiId
         name
@@ -82,14 +82,15 @@ export const pageQuery = graphql`
             }
           }
         }
-        stock
+        stocks
         name_ru
         description
         description_ru
-        reducere
-        promo_pagina_principala
-        numarul_articolului
-        la_comanda
+        sale
+        promo
+        power
+        tensiune
+        diametru
       }
     }
   }
