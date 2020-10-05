@@ -2,12 +2,27 @@
 
 // Image
 
-# Demo
+## Demo
 [Website](https://www.ingco.md)
 
-# Project description
-eCommerce shop for a power tools manufacturer.
+## Project description
+E-commerce shop for a power tools manufacturer.
 
+Built with Gatsby and Strapi as backend.
+The site is deployed into production and handles over 900 products.
+Each product has a statically generated page that is built by using the `generatePages` API.
+
+## Installation
+Clone the repository
+```git clone git@github.com:bashmentarium/ecommerce.git```
+
+Install dependencies
+```yarn```
+
+Run it
+```yarn develop```
+
+## Project debrief
 An e-commerce website for a leading electrical industry company and one of the largest power tools dealers in MD.
 The e-commerce website is coupled with a content management system and deployed on a static hosting provider, which empowers the team to:
 
