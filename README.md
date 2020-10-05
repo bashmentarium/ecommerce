@@ -1,4 +1,11 @@
-# eCommerce
+# INGCO - eCommerce
+
+// Image
+
+# Demo
+[Website](https://www.ingco.md)
+
+# Project description
 eCommerce shop for a power tools manufacturer.
 
 An e-commerce website for a leading electrical industry company and one of the largest power tools dealers in MD.
@@ -22,5 +29,3 @@ Ultimately, I delivered a website with:
  - CMS backend - Powered by Strapi, deployed on Heroku
  - E-commerce Frontend - Built with Gatsby and Deployed via Netlify
 
-# Demo
-[Website](https://www.ingco.md)
