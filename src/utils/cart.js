@@ -1,7 +1,6 @@
 /**
  * @method saveCart
- * @description Saves the content of the cart to Local Storage
- * given the passed cart object.
+ * @description Saves the content of the cart to Local Storage given the passed cart object.
  * @param {any[]} cart
  */
 export const saveCart = (cart) => {
@@ -10,8 +9,7 @@ export const saveCart = (cart) => {
 
 /**
  * @method getCart
- * @description Fetches the contents of the cart object from
- * the Local Storage
+ * @description Fetches the contents of the cart object from the Local Storage
  * @returns {any[]} cart
  */
 export const getCart = () => {
@@ -26,8 +24,7 @@ export const getCart = () => {
 
 /**
  * @method cartTotal
- * @description Calculates the products costs total given a cart object
- * as a parameter
+ * @description Calculates the products costs total given a cart object as a parameter
  * @param {any[]} cart
  * @returns {Number} cost
  */
@@ -54,8 +51,7 @@ export const clearCart = () => {
 
 /**
  * @method saveFavorites
- * @description Adds the passed product as an item to the favorites
- * object in the LocalStorage
+ * @description Adds the passed product as an item to the favorites object in the LocalStorage
  * @param {any[]} favorites
  */
 export const saveFavorites = (favorites) => {

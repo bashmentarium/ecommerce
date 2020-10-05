@@ -1,6 +1,6 @@
 # INGCO - eCommerce
 
-// Image
+![](Image.png)
 
 ## Demo
 [Website](https://www.ingco.md)
