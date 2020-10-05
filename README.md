@@ -1,4 +1,4 @@
-# INGCO - eCommerce
+# INGCO e-commerce
 
 ![](Image.png)
 
